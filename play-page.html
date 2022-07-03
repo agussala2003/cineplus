@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spiderman: No Way Home</title>
+    <link rel="stylesheet" href="css/styles.css"> <!-- Link al CSS -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'> <!-- Link al BoxIcons -->
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <!-- Nav -->
+        <div class="nav container">
+            <!-- Logo -->
+            <a href="index.html" class="logo">
+                Cine<span>Plus</span>
+            </a>
+            <!-- Buscador -->
+            <div class="search-box">
+                <input type="search" name="" id="search-input" placeholder="Buscar Pelicula">
+                <i class='bx bx-search'></i>
+            </div>
+            <!-- Usuario -->
+            <a href="#" class="user">
+                <img src="img/user.webp" alt="Imagen Usuario" class="user-img">
+            </a>
+            <!-- NavBar -->
+            <div class="navbar">
+                <a href="index.html" class="nav-link">
+                    <i class='bx bx-home-alt'></i>
+                    <span class="nav-link-title">Inicio</span>
+                </a>
+                <a href="#home" class="nav-link">
+                    <i class='bx bxs-hot'></i>
+                    <span class="nav-link-title">Tendencias</span>
+                </a>
+                <a href="#home" class="nav-link">
+                    <i class='bx bx-compass'></i>
+                    <span class="nav-link-title">Explorar</span>
+                </a>
+                <a href="#home" class="nav-link nav-active">
+                    <i class='bx bx-tv'></i>
+                    <span class="nav-link-title">Peliculas</span>
+                </a>
+                <a href="#home" class="nav-link">
+                    <i class='bx bxs-heart'></i>
+                    <span class="nav-link-title">Favoritos</span>
+                </a>
+            </div>
+        </div>
+    </header>
+    <!-- Play movie container -->
+    <div class="play-container container">
+        <img src="img/banners.png" alt="" class="play-img">
+        <!-- Play Text -->
+        <div class="play-text">
+            <h2>Spiderman: No Way Home</h2>
+            <!-- Ratings -->
+            <div class="rating">
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star-half' ></i>
+            </div>
+            <!-- Tags -->
+            <div class="tags">
+                <span>Accion</span>
+                <span>Aventura</span>
+                <span>Ficcion</span>
+                <span>4K</span>
+            </div>
+            <!-- Boton de trailer -->
+            <a href="#" class="watch-btn">
+                <i class='bx bx-right-arrow'></i>
+                <span>Mira el trailer</span>
+            </a>
+        </div>
+        <!-- Play btn -->
+        <i class='bx bx-right-arrow play-movie'></i>
+        <!-- Video Container -->
+        <div class="video-container">
+            <!-- Video Box -->
+            <div class="video-box">
+                <video id="myvideo" src="img/Spider-Man_ Sin Camino a Casa _ Teaser Tráiler Oficial _ Marvel Studios.mp4" controls></video>
+                <!-- Close Video -->
+                <i class='bx bx-x close-video' ></i>
+            </div>
+        </div>
+    </div>
+    <!-- About -->
+    <div class="about-movie container">
+        <h2>Spiderman: No Way Home</h2>
+        <p>Tras descubrirse la identidad secreta de Peter Parker como Spider-Man, la vida del joven se vuelve una locura. Peter decide pedirle ayuda al Doctor Extraño para recuperar su vida. Pero algo sale mal y provoca una fractura en el multiverso.</p>
+        <!-- Movie Cast -->
+        <h2 class="cast-heading">Elenco</h2>
+        <div class="cast">
+            <div class="cast-box">
+                <img src="img/holland.jpg" alt="Tom Holland" class="cast-img">
+                <span class="cast-title">Tom Holland</span>
+            </div>
+            <div class="cast-box">
+                <img src="img/garfield.jpg" alt="Andrew Garfield" class="cast-img">
+                <span class="cast-title">Andrew Garfield</span>
+            </div>
+            <div class="cast-box">
+                <img src="img/maguire.jpg" alt="Tobey Maguire" class="cast-img">
+                <span class="cast-title">Tobey Maguire</span>
+            </div>
+            <div class="cast-box">
+                <img src="img/zendaya.jpg" alt="Zendaya" class="cast-img">
+                <span class="cast-title">Zendaya</span>
+            </div>
+            <div class="cast-box">
+                <img src="img/tomei.jpg" alt="Marisa Tomei" class="cast-img">
+                <span class="cast-title">Marisa Tomei</span>
+            </div>
+            <div class="cast-box">
+                <img src="img/dafoe.jpg" alt="William Dafoe" class="cast-img">
+                <span class="cast-title">William Dafoe</span>
+            </div>
+        </div>
+    </div>
+    <!-- Downlowd -->
+    <div class="download">
+        <h2 class="download-title">Descargar Pelicula</h2>
+        <div class="download-links">
+            <a href="img/Spider-Man_ Sin Camino a Casa _ Teaser Tráiler Oficial _ Marvel Studios.mp4" download>480p</a>
+            <a href="img/Spider-Man_ Sin Camino a Casa _ Teaser Tráiler Oficial _ Marvel Studios.mp4" download>720p</a>
+            <a href="img/Spider-Man_ Sin Camino a Casa _ Teaser Tráiler Oficial _ Marvel Studios.mp4" download>1080p</a>
+        </div>
+    </div>
+    <!-- Copyright -->
+    <div class="copyright">
+        <p>&#169; CinePlus Todos los derechos reservados</p>
+    </div>
+    <script src="js/swiper-bundle.min.js"></script> <!-- Link al Swiper Javascript -->
+    <script src="js/main.js"></script>  <!-- Link al Javascript -->
+</body>
+</html>

@@ -1,5 +1,5 @@
 // Swiper 
-var swiper = new Swiper(".popular-content", {
+let swiper = new Swiper(".popular-content", {
     slidesPerView:1,
     spaceBetween: 10,
     autoplay: {
@@ -37,18 +37,46 @@ var swiper = new Swiper(".popular-content", {
         },
     },
 });
-// Mostrar Video
-let playButton = document.querySelector(".play-movie");
-let video = document.querySelector(".video-container");
-let myvideo = document.querySelector("#myvideo");
-let closebtn = document.querySelector(".close-video");
 
-playButton.onclick = () => {
-    video.classList.add("show-video");
-    myvideo.play();
-};
+// Storage
+localStorage.setItem('Nombre', 'Agustin');
+localStorage.Apellido = 'Saladino';
 
-closebtn.onclick = () => {
-    video.classList.remove("show-video");
-    myvideo.pause();
-};
+let firstName = localStorage.getItem('Nombre');
+let lastName  = localStorage.Apellido;
+
+console.log(`Hola, mi nombre es ${firstName} ${lastName}`);
+
+const peliculas = ["Spiderman","Thor","Jurassic","Doctor","Gemelo","Super","Lightyear","Spiderman","Breaking","Euphoria","Moon","Stranger","Loki","Hawkeye","It"];
+
+const pelis = {
+    ...peliculas
+}
+
+console.log(pelis);
+
+// Alert
+
+let searchButton = document.querySelector(".bx-search");
+
+searchButton.onclick = () => {
+    let buscar = document.getElementById("search-input");
+    for (let i=0;i<peliculas.length;i++) {
+        if (buscar.value==peliculas[i]) {
+            Swal.fire({
+                icon: 'success',
+                title: 'Estamos redirigiendote',
+                showConfirmButton: false,
+                timer: 2500
+            })
+            i = peliculas.length;
+        }
+        else {
+            Swal.fire({
+                icon: 'error',
+                title: 'Oops...',
+                text: 'La pelicula que estas buscando no se encuentra en nuestra pagina'
+            })
+        }
+    }
+}

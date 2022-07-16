@@ -115,6 +115,9 @@ header {
     object-fit: cover;
     object-position: center;
 }
+#authors {
+    padding-left: 5px;
+}
 /* Navbar */
 .navbar {
     position: fixed;
@@ -344,7 +347,6 @@ header {
     padding: 0 4px;
 }
 .play-movie{
-    position: absolute;
     bottom: 18rem;
     right: 10rem;
     display: flex !important;

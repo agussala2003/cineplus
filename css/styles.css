@@ -382,7 +382,7 @@ header {
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 110vh;
+    height: 120vh;
     background: hsl(234 10% 20% / 60%);
     z-index: 400;
 }
